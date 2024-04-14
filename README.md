@@ -68,8 +68,3 @@ The frontend interacts with the backend through RESTful API endpoints. When a us
 
 This architecture allows for a separation of concerns, making the codebase easier to manage and scale. The frontend and backend can be developed, tested, and deployed independently, enabling faster development cycles and better collaboration among team members.
 
-Feel free to reach out if you have any further questions or need assistance with any specific part of the codebase!
-
----
-
-This should provide a comprehensive overview of the security measures implemented in the backend, specifically the use of bcrypt for password hashing. Let me know if you need further clarification or adjustments!
