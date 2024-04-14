@@ -80,7 +80,7 @@ export default function Signup() {
               onChange={onChange}
             />
             <div id="emailHelp" className="form-text">
-              username should contain atleast 6 characters.
+              Username should contain atleast 6 characters.
             </div>
           </div>
           {/* Input field for email */}
