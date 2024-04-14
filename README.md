@@ -1,11 +1,14 @@
 
-# Food Delivery App
 
-Welcome to the repository for the Food Delivery App! This repository contains both the frontend and backend code for the application.
+
+
+# Foodie App
+
+Welcome to the repository for the Foodie App! This repository contains both the frontend and backend code for the application.
 
 ## Overview
 
-The Food Delivery App is a full-stack web application that allows users to browse food items, place orders, and manage their account. It consists of a frontend built with React.js and a backend built with Node.js, Express.js, and MongoDB.
+The Foodie App is a full-stack web application that allows users to browse food items, place orders, and manage their account. It consists of a frontend built with React.js and a backend built with Node.js, Express.js, and MongoDB.
 
 ### Frontend
 
@@ -59,9 +62,16 @@ The Food Delivery App is a full-stack web application that allows users to brows
 #### Security:
 User passwords are securely hashed using bcrypt before being stored in the database, ensuring enhanced security and protection against unauthorized access.
 
+## Deployment
+
+The Foodie App is deployed and accessible at [https://foodieme-seven.vercel.app/](https://foodieme-seven.vercel.app/).
+
 ## Overall Architecture
 
 The frontend interacts with the backend through RESTful API endpoints. When a user performs an action such as adding items to the cart or placing an order, the frontend sends requests to the backend, which then processes the requests and interacts with the database as necessary. The frontend receives responses from the backend and updates the user interface accordingly.
 
 This architecture allows for a separation of concerns, making the codebase easier to manage and scale. The frontend and backend can be developed, tested, and deployed independently, enabling faster development cycles and better collaboration among team members.
 
+Feel free to reach out if you have any further questions or need assistance with any specific part of the codebase!
+
+ke!
