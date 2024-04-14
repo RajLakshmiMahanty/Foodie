@@ -11,19 +11,13 @@ app.use(cors()); // Adding CORS middleware to enable cross-origin requests
 
 // Middleware to set CORS headers for all routes
 app.use((req, res, next) => {
-  res.setHeader(
-    "Access-Control-Allow-Origin",
-    "https://foodie-rho-sooty.vercel.app/",
-    "https://foodieme-seven.vercel.app/",
-    "https://foodie-rwly.onrender.com/api/createuser",
-    "https://foodie-rwly.onrender.com/api/loginuser"
-  ); // Allowing requests from localhost:3000
-  res.setHeader("Access-Control-Allow-Headers", "Content-Type"); // Allowing Content-Type header
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
   res.setHeader(
     "Access-Control-Allow-Methods",
     "GET, POST, PUT, DELETE, OPTIONS"
-  ); // Allowing specified HTTP methods
-  next(); // Moving to the next middleware/route handler
+  );
+  next();
 });
 
 app.use(express.json()); // Middleware to parse incoming JSON requests
