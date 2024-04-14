@@ -10,7 +10,7 @@ export default function MyOrder() {
   // Function to fetch user's order data
   const fetchMyOrder = async () => {
     // Fetching user's order data from the server
-    await fetch("http://localhost:8000/api/myOrderData", {
+    await fetch("https://foodie-rwly.onrender.com/api/myOrderData", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

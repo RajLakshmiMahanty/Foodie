@@ -19,16 +19,19 @@ export default function Cart() {
   // Function to handle checkout
   const handleCheckOut = async () => {
     let userEmail = localStorage.getItem("userEmail"); // Get user email from local storage
-    let response = await fetch("http://localhost:8000/api/orderData", {
-      // Fetch request to send order data
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        order_data: data,
-        email: userEmail,
-        order_date: new Date().toDateString(),
-      }),
-    });
+    let response = await fetch(
+      "https://foodie-rwly.onrender.com/api/orderData",
+      {
+        // Fetch request to send order data
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          order_data: data,
+          email: userEmail,
+          order_date: new Date().toDateString(),
+        }),
+      }
+    );
     console.log("Order Response:", response); // Log order response
 
     // If order is successful, empty the cart

@@ -11,7 +11,11 @@ app.use(cors()); // Adding CORS middleware to enable cross-origin requests
 
 // Middleware to set CORS headers for all routes
 app.use((req, res, next) => {
-  res.setHeader("Access-Control-Allow-Origin", "http://localhost:3000"); // Allowing requests from localhost:3000
+  res.setHeader(
+    "Access-Control-Allow-Origin",
+    "https://extraordinary-crisp-c7c650.netlify.app/",
+    "https://foodie-rwly.onrender.com/api/createuser"
+  ); // Allowing requests from localhost:3000
   res.setHeader("Access-Control-Allow-Headers", "Content-Type"); // Allowing Content-Type header
   res.setHeader(
     "Access-Control-Allow-Methods",

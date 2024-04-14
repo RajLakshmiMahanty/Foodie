@@ -12,12 +12,15 @@ export default function Home() {
   // Function to load data from backend
   const loadData = async () => {
     try {
-      let response = await fetch("http://localhost:8000/api/foodData", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
+      let response = await fetch(
+        "https://foodie-rwly.onrender.com/api/foodData",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
 
       response = await response.json();
       setFoodItem(response[0]); // Set food items state

@@ -25,14 +25,17 @@ export default function Login() {
     );
 
     // Fetching login API
-    const response = await fetch("http://localhost:8000/api/loginuser", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        email: credentials.email,
-        password: credentials.password,
-      }),
-    });
+    const response = await fetch(
+      "https://foodie-rwly.onrender.com/api/loginuser",
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          email: credentials.email,
+          password: credentials.password,
+        }),
+      }
+    );
 
     try {
       // Parsing JSON response

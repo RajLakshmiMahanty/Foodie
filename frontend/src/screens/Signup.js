@@ -8,7 +8,7 @@ export default function Signup() {
     name: "",
     email: "",
     password: "",
-    geolocation: ""
+    geolocation: "",
   });
 
   // Function to handle form submission
@@ -19,20 +19,23 @@ export default function Signup() {
         name: credentials.name,
         email: credentials.email,
         password: credentials.password,
-        location: credentials.geolocation
+        location: credentials.geolocation,
       })
     );
     // Send a POST request to the server with user credentials
-    const response = await fetch("http://localhost:8000/api/createuser", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        name: credentials.name,
-        email: credentials.email,
-        password: credentials.password,
-        location: credentials.geolocation
-      })
-    });
+    const response = await fetch(
+      "https://foodie-rwly.onrender.com/api/createuser",
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: credentials.name,
+          email: credentials.email,
+          password: credentials.password,
+          location: credentials.geolocation,
+        }),
+      }
+    );
     try {
       // Parse the JSON response
       const json = await response.json();
@@ -51,7 +54,7 @@ export default function Signup() {
     // Update the credentials state with the new input values
     setCredentials({
       ...credentials,
-      [event.target.name]: event.target.value
+      [event.target.name]: event.target.value,
     });
   };
 
