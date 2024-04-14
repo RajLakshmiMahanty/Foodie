@@ -74,4 +74,4 @@ This architecture allows for a separation of concerns, making the codebase easie
 
 Feel free to reach out if you have any further questions or need assistance with any specific part of the codebase!
 
-ke!
+
