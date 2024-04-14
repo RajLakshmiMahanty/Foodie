@@ -14,7 +14,8 @@ app.use((req, res, next) => {
   res.setHeader(
     "Access-Control-Allow-Origin",
     "https://extraordinary-crisp-c7c650.netlify.app/",
-    "https://foodie-rwly.onrender.com/api/createuser"
+    "https://foodie-rwly.onrender.com/api/createuser",
+    "https://foodie-rwly.onrender.com/api/loginuser"
   ); // Allowing requests from localhost:3000
   res.setHeader("Access-Control-Allow-Headers", "Content-Type"); // Allowing Content-Type header
   res.setHeader(
