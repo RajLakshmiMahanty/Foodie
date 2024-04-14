@@ -43,6 +43,9 @@ export default function Signup() {
       // Display an alert if the registration is unsuccessful
       if (!json.success) {
         alert("Please enter valid credentials");
+      } else {
+        // Redirect to the login page if registration is successful
+        window.location.href = "/login";
       }
     } catch (error) {
       console.error("Failed to parse JSON response:", error);
@@ -76,6 +79,9 @@ export default function Signup() {
               value={credentials.name}
               onChange={onChange}
             />
+            <div id="emailHelp" className="form-text">
+              username should contain atleast 6 characters.
+            </div>
           </div>
           {/* Input field for email */}
           <div className="mb-3">
@@ -108,6 +114,9 @@ export default function Signup() {
               onChange={onChange}
               id="exampleInputPassword1"
             />
+            <div id="emailHelp" className="form-text">
+              password should contain atleast 6 characters.
+            </div>
           </div>
           {/* Input field for geolocation */}
           <div className="mb-3">
@@ -115,7 +124,7 @@ export default function Signup() {
               Address
             </label>
             <input
-              type="geolocation"
+              type="text"
               className="form-control"
               name="geolocation"
               value={credentials.geolocation}
@@ -124,7 +133,7 @@ export default function Signup() {
             />
           </div>
           {/* Submit button */}
-          <button type="submit" className="m-3 btn btn-sucess">
+          <button type="submit" className="m-3 btn btn-primary">
             Submit
           </button>
           {/* Link to redirect to login page if user is already registered */}
