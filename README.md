@@ -1,6 +1,3 @@
-Absolutely! Here's the updated template with a section added to highlight the usage of bcrypt for hashing user passwords in the backend:
-
----
 
 # Food Delivery App
 
