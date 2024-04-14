@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; // Im
 import Login from "./screens/Login"; // Import Login component
 import Signup from "./screens/Signup"; // Import Signup component
 import MyOrder from "./screens/MyOrder"; // Import MyOrder component
-import "bootstrap-dark-5/dist/css/bootstrap-dark.min.css"; // Import Bootstrap Dark CSS
 import "bootstrap/dist/js/bootstrap.bundle"; // Import Bootstrap bundle
 import "bootstrap/dist/js/bootstrap.bundle.min.js"; // Import Bootstrap minified bundle
 import { CartProvider } from "./components/ContextReducer"; // Import CartProvider from ContextReducer component
